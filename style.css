@@ -1,0 +1,115 @@
+body {
+    box-sizing: border-box;
+    background-image: url("images/world.png");
+    background-size: 100vw;
+    background-color: #2f2c2c;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+.quizArea {
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    width: 400px;
+    height: 380px;
+    border-radius: 10px;
+}
+
+
+.card {
+    font-weight: 500;
+    font-size: 16px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    transition: all 0.5s linear;
+    transform-style: preserve-3d;
+    margin: 5px;
+}
+.front, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.front {
+    background-color: hsla(40, 2%, 27%, 1);
+    border: 1px solid white;
+    border-radius: 10px;
+    z-index: 2;
+    backface-visibility: hidden;
+}
+.back {
+    background-color: rgba(0, 0, 0,.5);
+    background-blend-mode: multiply;
+    border: 1px solid white;
+    border-radius: 10px;
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.Taipei {
+    background-image: url("images/Taipei.jpg");
+    background-size: cover;
+}
+.Tokyo {
+    background-image:url("images/Tokyo.jpg");
+    background-size: cover;
+}
+.Reykjavík {
+    background-image:url("images/Reykjavík.jpg");
+    background-size: cover;
+}
+
+.London {
+    background-image:url("images/Lodon.jpg");
+    background-size: cover;
+}
+.Singapore {
+    background-image:url("images/Singapore.jpg");
+    background-size: cover;
+}
+.Canberra {
+    background-image:url("images/Canberra.jpg");
+    background-size: cover;
+}
+.New_Delhi {
+    background-image:url("images/New_Delhi.jpg");
+    background-size: cover;
+}
+.Stockholm {
+    background-image:url("images/Stockholm.jpg");
+    background-size: cover;
+}
+.Mexico_City {
+    background-image:url("images/Mexico City.jpg");
+    background-size: cover;
+}
+
+
+
